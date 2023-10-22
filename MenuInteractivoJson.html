@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Interactivo</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header__superior">
+            <div class="logo">
+                <img src="img/banco_original_9.jpg" alt="">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="¿Qué deseas buscar?">
+            </div>
+        </div>
+
+        <div class="container__menu">
+
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+                <label for="check__menu" id="label__check">
+                    <i class="fas fa-bars icon__menu"></i>
+                </label>
+                <nav>
+                    <ul id="menuN">
+                        <li><a href="#" id="selected"></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="img/foto-banco.jpg" alt="Imagen" class="responsive-image">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
