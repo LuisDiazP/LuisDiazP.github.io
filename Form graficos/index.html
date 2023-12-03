@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./JS/chart.umd.min.js"></script>
+    <script src="./JS/index.js" defer></script>
+    <title>Asistencia de estudiantes</title>
+  </head>
+  <body>
+    
+<div class="container">
+  <h1>Grafica de asistencia</h1>
+  <form id="form">
+    <div id="data"></div>
+    <div id="inputs">
+      <div class="titles">
+        <h3>Dia</h3>
+        <h3>Cantidada</h3>
+      </div>
+      <div id="container-inputs">
+        <div class="container-info">
+          <input type="text" class="dia" placeholder="Inserte el dia de la semana">
+          <input type="number" class="cantidad" placeholder="Inserte el numero de estudiantes presentes">
+        </div>
+        <div class="container-info">
+          <input type="text" class="dia" placeholder="Inserte el dia de la semana">
+          <input type="number" class="cantidad" placeholder="Inserte el numero de estudiantes presentes">
+        </div>
+        <div class="container-info">
+          <input type="text" class="dia" placeholder="Inserte el dia de la semana">
+          <input type="number" class="cantidad" placeholder="Inserte el numero de estudiantes presentes">
+        </div>
+      </div>
+      <br>
+      <div class="father">
+        <div class="btns-container">
+          <a type="button" id="crear">Agregar dia</a>
+          <a type="submit" id="chart">Generar grafico</a>
+        </div>
+      </div>
+      <br>
+      <div id="canvas-container" hidden>
+        <canvas id="canvas" hidden></canvas>
+      </div>
+      
+
+    </div>
+  </form>
+</div>
+
+  </body>
+</html>
