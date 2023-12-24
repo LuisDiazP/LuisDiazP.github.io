@@ -1,0 +1,180 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, main, footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+ 
+  header {
+    background-color: #f2f2f2;
+  }
+  
+
+  .menu {
+    background-color: #333;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .menu li {
+    float:left;
+  }
+  
+  .menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .menu li a:hover {
+    background-color: #111;
+  }
+  
+ .Inicio {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    height: 75vh;
+    padding: 13px;
+  }
+  
+  .hinicio {
+    font-size: 3em;
+    margin-bottom: 20px; 
+  }
+   
+  .text {
+    width: 57%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 400px;
+  }
+  /**/
+
+  .text p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    font-size: 1.8em;
+    margin: 0;
+  }
+  .Presentacion {
+    background-color: #fff;
+    padding: 40px;
+    height: 75vh;
+  }
+  
+
+  .tarjeta {
+    width: 1000px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .tarjeta .header {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .tarjeta h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  .tarjeta .info p {
+    margin: 12px 0;
+    font-size: 20px;
+    text-align: left;
+  }
+
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  gap: 20px;
+  background-color: #f9f9f9;
+  padding: 40px;
+  height: 75vh;
+}
+
+.hproy {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.botones-contenedor {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.boton {
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.icono-carpeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.icono-carpeta i {
+  font-size: 68px;
+  color: #008ae6;
+}
+
+.nombre-carpeta {
+  margin-top: 5px;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.icono-carpeta:hover  {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sect-Mopt{
+  display: none;
+  transform-origin: top;
+}
+
+.sect-Mopt-active{
+  display: block;
+}
+
