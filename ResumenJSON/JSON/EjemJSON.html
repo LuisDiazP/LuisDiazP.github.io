@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de AJAX</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Usuarios</h1>
+        <div id="usuarios" class="usuarios-container">
+        </div>
+        <button id="cargarUsuarios" class="cargar-btn">Cargar Usuarios</button>
+    </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("cargarUsuarios").addEventListener("click", function() {
+        var xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+              var usuarios = JSON.parse(xhr.responseText);
+              mostrarUsuarios(usuarios);
+            } else {
+              console.error('Hubo un error al cargar los usuarios.');
+            }
+          }
+        };
+
+        xhr.open("GET", "usuarios.json", true);
+        xhr.send();
+      });
+
+      function mostrarUsuarios(usuarios) {
+        var usuariosDiv = document.getElementById("usuarios");
+        usuarios.forEach(function(usuario) {
+          var usuarioDiv = document.createElement("div");
+          usuarioDiv.textContent = `Nombre: ${usuario.nombre}, Email: ${usuario.email}`;
+          usuariosDiv.appendChild(usuarioDiv);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

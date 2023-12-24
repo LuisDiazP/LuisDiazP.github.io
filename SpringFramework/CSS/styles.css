@@ -1,0 +1,39 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #72eb3a;
+  }
+  
+  .main-container {
+    width: 50%;
+    margin: 10px auto;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 12px;
+  }
+
+  .main-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .main-container p {
+    margin-bottom: 1px;
+  }
+  
+  img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+ 
+  
+ 
+
+

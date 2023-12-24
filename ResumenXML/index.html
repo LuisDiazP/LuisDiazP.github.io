@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resumen de XML</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>Resumen de XML</h1>
+        <div id="blogPosts" class="blog-posts"></div>
+        <h3>¿Qué es xml?</h3>
+        <p>
+            XML es un lenguaje de marcado similar a HTML. Significa Extensible Markup Language 
+            (Lenguaje de Marcado Extensible) y es una especificación de como lenguaje de marcado de 
+            propósito general. Esto significa que, a diferencia de otros lenguajes de marcado, XML 
+            no está predefinido, por lo que debes definir tus propias etiquetas. El propósito principal 
+            del lenguaje es compartir datos a través de diferentes sistemas, como Internet.
+        </p>
+        
+        <p>
+            XML (Extensible Markup Language) es un lenguaje de marcado que se utiliza para describir
+            documentos en formato texto plano, y que permite a los programadores crear ficheros XML
+            para almacenar información en una estructura jerárquica.
+        </p>
+
+        <h3>Importancia y Propósito:</h3>
+        <ol>
+            <li>
+                <b>Intercambio de datos:</b> XML es ampliamente utilizado para el intercambio de datos entre diferentes 
+                sistemas y aplicaciones debido a su capacidad de representar datos de manera estructurada y legible.
+            </li>
+            <li>
+                <b>Independencia de plataforma:</b> Al ser un formato de texto plano, los datos en formato XML son independientes 
+                de la plataforma y pueden ser interpretados por diferentes sistemas y lenguajes de programación.
+            </li>
+            <li>
+                <b>Personalización:</b> Permite definir etiquetas y estructuras de datos personalizadas, lo que hace que sea 
+                flexible y adaptable a una amplia gama de necesidades de almacenamiento y transmisión de datos.
+            </li>
+        </ol>
+
+        <h3>Características:</h3>
+        <ol>
+            <li>
+                <b>Legibilidad:</b> Los datos en XML están estructurados de manera jerárquica y legible, lo que facilita su comprensión tanto para humanos como para máquinas.
+            </li>
+            <li>
+                <b>Extensible:</b> Permite definir etiquetas personalizadas y estructuras de datos según las necesidades específicas de la aplicación o el sistema.
+            </li>
+            <li>
+                <b>Interoperabilidad:</b> Al ser un estándar, XML facilita el intercambio de datos entre sistemas heterogéneos.
+            </li>
+            <li>
+                <b>Versatilidad:</b> Puede ser utilizado para una amplia gama de propósitos, desde la representación de datos estructurados hasta la configuración de documentos.
+            </li>
+        </ol>
+
+        <h3>Uso de XML</h3>
+        <P>
+            Para utilizar XML, se crea un documento XML que sigue las reglas de sintaxis establecidas. Un documento XML 
+            tiene una estructura jerárquica con una etiqueta de inicio y una etiqueta de cierre para cada elemento, y puede 
+            incluir atributos y datos dentro de estos elementos.
+        </P>
+        <P>
+            Para trabajar con XML, se puede utilizar cualquier lenguaje de programación que admita su manipulación, como Java, 
+            Python, JavaScript, entre otros. Estos lenguajes suelen tener bibliotecas o paquetes que facilitan la lectura, 
+            escritura y manipulación de datos en formato XML. Además, se puede utilizar XML en combinación con otras tecnologías 
+            como XPath, XSLT, XML Schema, entre otras, para validar, transformar y gestionar los datos de manera más avanzada.
+        </P>
+        <br><br>
+        <h3>Ejemplo</h3>
+        <hr>
+        <div class="ejemplo-container">
+
+            <div class="code-container">
+                <div class="code-tab">
+                    <span class="title"><strong>XML</strong></span>
+                </div>
+                <div class="code-box">
+                    <pre>
+                        <code class="xml">
+                            &lt;?xml version="1.0" encoding="UTF-8"?>
+                            &lt;?xml-stylesheet type="text/css" href="./style.css"?>
+                            &lt;contenedor>
+                                &lt;library>
+                                &lt;book>
+                                    &lt;title>El Señor de los Anillos&lt;/title>
+                                    &lt;author>J.R.R. Tolkien&lt;/author>
+                                    &lt;genre>Fantasía&lt;/genre>
+                                    &lt;published_year>1954&lt;/published_year>
+                                &lt;/book>
+                                &lt;book>
+                                    &lt;title>Cien años de soledad&lt;/title>
+                                    &lt;author>Gabriel García Márquez&lt;/author>
+                                    &lt;genre>Realismo mágico&lt;/genre>
+                                    &lt;published_year>1967&lt;/published_year>
+                                &lt;/book>
+                                &lt;book>
+                                    &lt;title>Fundación&lt;/title>
+                                    &lt;author>Isaac Asimov&lt;/author>
+                                    &lt;genre>Ciencia ficción&lt;/genre>
+                                    &lt;published_year>1951&lt;/published_year>
+                                &lt;/book>
+                                &lt;/library>
+                            &lt;/contenedor>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            
+            <div class="frame-container">
+                <iframe src="./XML/Ejemplo.xml"></iframe>
+            </div>
+        </div>
+
+    </div> 
+</body>
+</html>

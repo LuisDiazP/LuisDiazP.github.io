@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="./style.css"?>
+<contenedor>
+    <library>
+    <book>
+        <title>El Señor de los Anillos</title>
+        <author>J.R.R. Tolkien</author>
+        <genre>Fantasía</genre>
+        <published_year>1954</published_year>
+    </book>
+    <book>
+        <title>Cien años de soledad</title>
+        <author>Gabriel García Márquez</author>
+        <genre>Realismo mágico</genre>
+        <published_year>1967</published_year>
+    </book>
+    <book>
+        <title>Fundación</title>
+        <author>Isaac Asimov</author>
+        <genre>Ciencia ficción</genre>
+        <published_year>1951</published_year>
+    </book>
+    </library>
+</contenedor>

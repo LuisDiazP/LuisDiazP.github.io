@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resumen Modelo MVC</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>Resumen de MVC</h1>
+        <div id="blogPosts" class="blog-posts"></div>
+        <h3>¿Qué es MVC?</h3>
+        <p>
+            El patrón de arquitectura de software Modelo-Vista-Controlador (MVC) es un enfoque de diseño 
+            que separa una aplicación en tres componentes principales: el Modelo, la Vista y el Controlador. 
+            Este enfoque facilita la organización del código, mejora la modularidad y facilita el mantenimiento 
+            y la escalabilidad de la aplicación.
+        </p>
+        
+        <p>
+            <ul>
+                <li>
+                    <P>
+                        <b>Modelo:</b> Representa los datos y la lógica de la aplicación. Es responsable de gestionar 
+                        el estado de la aplicación, recuperar y almacenar datos, así como realizar operaciones lógicas. 
+                        Ejemplos de modelos incluyen clases, estructuras de datos o cualquier componente encargado de 
+                        interactuar con la base de datos.
+                    </P>
+                </li>
+                <li>
+                    <p>
+                        <b>Vista:</b> Es la interfaz de usuario con la que interactúan los usuarios finales. Representa 
+                        la presentación de los datos y se encarga de mostrar la información al usuario de manera adecuada. 
+                        Puede ser una interfaz gráfica, una página web, una aplicación móvil, etc.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                       <b>Controlador:</b> Actúa como intermediario entre el Modelo y la Vista. Responde a las acciones 
+                       del usuario y actualiza el Modelo en consecuencia. Se encarga de manejar las interacciones del 
+                       usuario, procesar las entradas y modificar el Modelo o la Vista en función de estas acciones.
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <h3>Características:</h3>
+        <ul>
+            <li>
+                <b>Separación de preocupaciones:</b> MVC permite separar la lógica de negocios (Modelo), la presentación (Vista) y 
+                la gestión de interacciones (Controlador). Esta separación facilita la organización del código, lo hace más comprensible 
+                y mantenible, ya que cada componente tiene su responsabilidad específica.
+            </li>
+            <li>
+                <b>Facilita la colaboración:</b> Al dividir la aplicación en tres componentes distintos, diferentes equipos de desarrollo 
+                pueden trabajar en paralelo en áreas específicas sin interferir en el trabajo de los demás. Por ejemplo, los diseñadores 
+                pueden enfocarse en la Vista, los ingenieros en el Modelo y los desarrolladores de interfaces en el Controlador.
+            </li>
+            <li>
+                <b>Reutilización de código:</b> La separación de capas en MVC permite reutilizar componentes fácilmente. Los Modelos 
+                pueden ser utilizados por diferentes Vistas o Controladores, lo que mejora la eficiencia en el desarrollo al no tener 
+                que escribir código repetitivo.
+            </li>
+            <li>
+                <b>Facilita el mantenimiento:</b> Al tener una estructura bien definida y separada, resulta más sencillo realizar cambios 
+                o mejoras en la aplicación. La modificación de un componente no afecta necesariamente a los demás si se respeta el contrato 
+                entre ellos, lo que reduce el riesgo de errores inesperados.
+            </li>
+            <li>
+                <b>Adaptabilidad y escalabilidad:</b> MVC hace que las aplicaciones sean más adaptables a cambios futuros y más fáciles de escalar. 
+                Al modificar un componente, se pueden mantener los otros componentes intactos si se respeta la interfaz establecida entre ellos.
+            </li>
+        </ul>
+
+        <h3>Uso de MVC</h3>
+        <ol>
+            <li>
+                <b>Desarrollo web:</b> MVC es muy popular en el desarrollo de aplicaciones web. Los frameworks como Ruby on Rails, 
+                Django (Python), Laravel (PHP), Spring (Java) y ASP.NET MVC (C#) implementan este patrón para separar la lógica de 
+                negocios, la presentación y el control de las aplicaciones web.
+            </li>
+            <li>
+                <b>Aplicaciones móviles:</b> En el desarrollo de aplicaciones móviles, especialmente con el paradigma de desarrollo 
+                nativo o utilizando tecnologías híbridas como Flutter o React Native, MVC se emplea para separar la lógica de la aplicación, 
+                la vista y la interacción del usuario.
+            </li>
+            <li>
+                <b>Desarrollo de escritorio:</b> Aunque se utiliza más comúnmente en el desarrollo web y móvil, MVC también se puede aplicar 
+                en el desarrollo de aplicaciones de escritorio. Herramientas como JavaFX, Windows Presentation Foundation (WPF) en .NET, y 
+                otros entornos gráficos utilizan variantes del patrón MVC para estructurar las aplicaciones.
+            </li>
+            <li>
+                <b>Juegos y desarrollo multimedia:</b> En el desarrollo de videojuegos y aplicaciones multimedia interactivas, MVC se emplea 
+                para separar la lógica del juego (modelo), la representación gráfica (vista) y la interacción del usuario (controlador).
+            </li>
+            <li>
+                <b>Sistemas de gestión de contenido (CMS):</b> Muchos sistemas de gestión de contenido, como WordPress, Drupal o Joomla, utilizan 
+                el patrón MVC para gestionar la lógica de contenido, la interfaz de usuario y las interacciones con el usuario final.
+            </li>
+            <li>
+                <b>Aplicaciones empresariales:</b> En el desarrollo de aplicaciones empresariales, donde la estructura y la escalabilidad son 
+                fundamentales, el uso de MVC ayuda a mantener un código más organizado, facilitando la gestión y el mantenimiento a largo plazo.
+            </li>
+        </ol>
+        <br><br>
+        <h3>Ejemplo</h3>
+        <hr>
+        <div class="ejemplo-container">
+
+            <div class="code-container">
+                <div class="code-tab">
+                    <span class="title"><strong>Vista</strong></span>
+                </div>
+                <div class="code-box">
+                    <pre>
+                        <code class="xml">
+                            &lt;!DOCTYPE html>
+                            &lt;html lang="en">
+                            &lt;head>
+                                &lt;meta charset="UTF-8">
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                &lt;title>Lista de Tareas - MVC&lt;/title>
+                                &lt;link rel="stylesheet" href="styles.css">
+                            &lt;/head>
+                            &lt;body>
+                                &lt;div class="container">
+                                    &lt;div class="card">
+                                    &lt;h1>Lista de Tareas&lt;/h1>
+                                    &lt;nput type="text" id="taskInput" placeholder="Agregar nueva tarea">
+                                    &lt;button id="addTaskButton">Agregar&lt;/button>
+                                
+                                    &lt;ol id="taskList">&lt;/ol>
+                                    &lt;/div>
+                                &lt;/div>
+                                
+                                &lt;script src="controller.js">&lt;/script>
+                            &lt;/body>
+                            &lt;/html>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <br>
+            <div class="ejemplo-container">
+
+                <div class="code-container">
+                    <div class="code-tab">
+                        <span class="title"><strong>Modelo/Controlador</strong></span>
+                    </div>
+                    <div class="code-box">
+                        <pre>
+                            <code class="xml">
+                        // Modelo
+                        const model = {
+                            tasks: [],
+                        };
+                        
+                        // Vista
+                        const view = {
+                            renderTasks: function() {
+                            const taskList = document.getElementById('taskList');
+                            taskList.innerHTML = '';
+                        
+                            model.tasks.forEach(function(task, index) {
+                                const taskItem = document.createElement('li');
+                                taskItem.textContent = task;
+                                taskList.appendChild(taskItem);
+                            });
+                            },
+                        };
+                        
+                        // Controlador
+                        const controller = {
+                            init: function() {
+
+                                model.tasks.push('Pasear al perro');
+                                model.tasks.push('Comprar lo huevos');
+                                model.tasks.push('Llamar a mama');
+
+                            view.renderTasks();
+                        
+                            const addTaskButton = document.getElementById('addTaskButton');
+                            addTaskButton.addEventListener('click', function() {
+                                const taskInput = document.getElementById('taskInput');
+                                const newTask = taskInput.value.trim();
+                        
+                                if (newTask !== '') {
+                                model.tasks.push(newTask);
+                                taskInput.value = '';
+                                view.renderTasks();
+                                }
+                            });
+                            },
+                        };
+                        
+                        document.addEventListener('DOMContentLoaded', function() {
+                            controller.init();
+                        });
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            
+            <div class="frame-container">
+                <iframe src="./MVC/vista.html"></iframe>
+            </div>
+        </div>
+
+    </div> 
+</body>
+</html>

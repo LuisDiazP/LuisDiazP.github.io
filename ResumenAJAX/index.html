@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resumen de AJAX</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>Resumen de AJAX</h1>
+        <div id="blogPosts" class="blog-posts"></div>
+        <h3>¿Qué es ajax?</h3>
+        <p>
+            AJAX (Asynchronous JavaScript and XML) es una técnica de programación que permite actualizar el 
+            contenido de una página web de manera asincrónica, es decir, sin necesidad de recargar por completo 
+            la página. Emplea un conjunto de tecnologías como JavaScript, XML o JSON, HTML y CSS para facilitar 
+            la comunicación entre el cliente y el servidor.
+        </p>
+        
+
+        <h3>Importancia y Propósito:</h3>
+        <p>
+            La importancia de AJAX radica en su capacidad para mejorar la experiencia del usuario al permitir 
+            la actualización dinámica de contenidos sin interrumpir la navegación. Su propósito principal es 
+            brindar una experiencia más fluida y rápida en las aplicaciones web, al realizar solicitudes al 
+            servidor en segundo plano, lo que reduce el tiempo de espera y ofrece interfaces más interactivas.
+        </p>
+
+        <h3>Características:</h3>
+        <ol>
+            <li>
+                <b>Asincronía:</b> Permite realizar solicitudes al servidor sin interrumpir la interacción del usuario con la página.
+            </li>
+            <li>
+                <b>Actualización parcial:</b> Puede actualizar partes específicas de una página sin recargarla por completo.
+            </li>
+            <li>
+                <b>Tecnologías múltiples:</b> Utiliza diferentes tecnologías como JavaScript, XML o JSON, HTML y CSS para su funcionamiento.
+            </li>
+            <li>
+                <b>Ahorro de ancho de banda:</b> Al actualizar solo partes específicas, reduce la cantidad de datos transferidos entre el cliente y el servidor.
+            </li>
+        </ol>
+
+        <h3>Uso de AJAX</h3>
+        <P>
+            Se utiliza en una amplia gama de aplicaciones web para mejorar la experiencia del usuario. 
+            Ejemplos comunes incluyen formularios que validan datos en tiempo real, comentarios que se 
+            actualizan sin recargar la página, carga dinámica de contenido al hacer scroll, entre otros. 
+            Plataformas como Gmail, Google Maps y redes sociales hacen uso extensivo de AJAX para ofrecer 
+            interacciones fluidas y rápidas sin recargar por completo la página web.
+        </P>
+       
+        <br><br>
+        <h3>Ejemplo</h3>
+        <hr>
+        <div class="ejemplo-container">
+
+            <div class="code-container">
+                <div class="code-tab">
+                    <span class="title"><strong>AJAX</strong></span>
+                </div>
+                <div class="code-box">
+                    <pre>
+                        <code class="cd">
+                        document.addEventListener("DOMContentLoaded", function() {
+                            document.getElementById("cargarUsuarios").addEventListener("click", function() {
+                                var xhr = new XMLHttpRequest();
+                        
+                                xhr.onreadystatechange = function() {
+                                if (xhr.readyState === XMLHttpRequest.DONE) {
+                                    if (xhr.status === 200) {
+                                    var usuarios = JSON.parse(xhr.responseText);
+                                    mostrarUsuarios(usuarios);
+                                    } else {
+                                    console.error('Hubo un error al cargar los usuarios.');
+                                    }
+                                }
+                                };
+                        
+                                xhr.open("GET", "usuarios.json", true);
+                                xhr.send();
+                            });
+                        
+                            function mostrarUsuarios(usuarios) {
+                                var usuariosDiv = document.getElementById("usuarios");
+                                usuarios.forEach(function(usuario) {
+                                var usuarioDiv = document.createElement("div");
+                                usuarioDiv.textContent = `Nombre: ${usuario.nombre}, Email: ${usuario.email}`;
+                                usuariosDiv.appendChild(usuarioDiv);
+                                });
+                            }
+                            });
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            
+            <div class="frame-container">
+                <iframe src="./AJAX/EjemAjax.html"></iframe>
+            </div>
+        </div>
+
+    </div> 
+</body>
+</html>
